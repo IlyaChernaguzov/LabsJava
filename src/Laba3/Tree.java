@@ -54,7 +54,7 @@ public class Tree {
     }
 }
 
-class Main {
+class Main3 {
     public static void main(String[] args) {
 
         Tree tree1 = new Tree(100, true, "Oak");
