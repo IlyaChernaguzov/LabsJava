@@ -47,7 +47,7 @@ public class House {
 
 
 
-class Main {
+class Main3 {
     public static void main(String[] args) {
         House house = new House();
 
