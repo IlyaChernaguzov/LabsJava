@@ -3,6 +3,25 @@ package Laba4;
 import java.util.Arrays;
 
 public class Task24 {
+
+    public static void arrayMethod(int[] intArray) {
+
+        for (int i = 0; i < intArray.length; i++) {
+            boolean isTrue = true;
+            for (int j = 0; j < intArray.length; j++) {
+                if (intArray[i] == intArray[j] && i != j) {
+                    isTrue = false;
+                }
+            }
+            if(isTrue) {
+                System.out.print("Первое уникальное число " + intArray[i]);
+                break;
+            }
+        }
+    }
+
+
+
     public static void main(String[] args) {
         int[] intArray = new int[6];
 
@@ -15,22 +34,7 @@ public class Task24 {
 
         System.out.println("Array: " + Arrays.toString(intArray));
 
-        for (int i = 0; i < intArray.length; i++) {
-            boolean unik = true;
-            for (int j = 0; j < intArray.length; j++) {
-                if (intArray[i] == intArray[j] && i != j) {
-//                    System.out.println(intArray[i]);
-//                    System.out.println(intArray[j]);
-                    unik = false;
-                }
-            }
-            if(unik) {
-                System.out.print("Первое уникальное число " + intArray[i]);
-                break;
-            }
-
-        }
-
+        arrayMethod(intArray);
     }
 }
 

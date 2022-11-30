@@ -3,6 +3,17 @@ package Laba4;
 import java.util.Scanner;
 
 public class Task4 {
+
+    public static void intMethod (int a, int b, int c) {
+        if (a < b && b < c) {
+
+            System.out.println("Результат: true");
+        }
+        else {
+            System.out.println("Результат: false");
+        }
+    }
+
     public static void main(String[] args) {
 
         Scanner console = new Scanner(System.in);
@@ -14,14 +25,7 @@ public class Task4 {
         System.out.println("Введите третье число: ");
         int c = console.nextInt();
 
-
-        if (a < b && b < c) {
-
-            System.out.println("Результат: true");
-        }
-        else {
-            System.out.println("Результат: false");
-        }
+        intMethod(a, b, c);
 
     }
 }

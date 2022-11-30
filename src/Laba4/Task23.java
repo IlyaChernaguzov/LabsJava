@@ -22,7 +22,7 @@ public class Task23 {
         intArray[3] = 4;
         intArray[4] = 5;
         intArray[5] = 55;
-        intArray[6] = 19;
+        intArray[6] = 9;
 
         System.out.println("Array 1: " + Arrays.toString(intArray));
 

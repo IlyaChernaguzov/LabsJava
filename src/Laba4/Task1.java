@@ -1,9 +1,15 @@
 package Laba4;
 
 public class Task1 {
+
+    public static void intMethod () {
+
+        for (int n = 1; 100 > n; n = n + 2) {System.out.println(n);}
+    }
     public static void main(String[] args) {
-        int n;
-        for (n = 1; 100 > n; n = n + 2) {System.out.println(n);}
+
+        intMethod ();
+
     }
 }
 

@@ -3,6 +3,15 @@ package Laba4;
 import java.util.Scanner;
 
 public class Task3 {
+    public static void intMethod (int a, int b, int c) {
+        if (c == a + b) {
+
+            System.out.println("Результат: true");
+        }
+        else {
+            System.out.println("Результат: false");
+        }
+    }
     public static void main(String[] args) {
 
         Scanner console = new Scanner(System.in);
@@ -14,14 +23,8 @@ public class Task3 {
         System.out.println("Введите третье число: ");
         int c = console.nextInt();
 
+        intMethod (a, b, c);
 
-        if (c == a + b) {
-
-            System.out.println("Результат: true");
-        }
-        else {
-            System.out.println("Результат: false");
-        }
     }
 
 }

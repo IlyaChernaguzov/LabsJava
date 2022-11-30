@@ -3,18 +3,8 @@ package Laba4;
 import java.util.Arrays;
 
 public class Task21 {
-    public static void main(String[] args) {
-        int[] intArray = new int[7];
 
-        intArray[0] = 2;
-        intArray[1] = 2;
-        intArray[2] = 3;
-        intArray[3] = 4;
-        intArray[4] = 5;
-        intArray[5] = 55;
-        intArray[6] = 1;
-
-        System.out.println("array = " + Arrays.toString(intArray));
+    public static void arrayMethod(int[] intArray) {
 
         for (int i = 0; i < intArray.length-1; i++) {
 
@@ -25,6 +15,22 @@ public class Task21 {
 
 
         }
+    }
+    public static void main(String[] args) {
+        int[] intArray = new int[7];
+
+        intArray[0] = 2;
+        intArray[1] = 2;
+        intArray[2] = 3;
+        intArray[3] = 4;
+        intArray[4] = 5;
+        intArray[5] = 5;
+        intArray[6] = 6;
+
+        System.out.println("array = " + Arrays.toString(intArray));
+
+        arrayMethod(intArray);
+
     }
 }
 

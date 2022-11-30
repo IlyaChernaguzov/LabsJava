@@ -4,6 +4,19 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task22 {
+
+    public static void arrayMethod(int number, int number1, int number2, int number3, int number4) {
+
+        int[] intArray = new int[number];
+
+        intArray[0] = number1;
+        intArray[1] = number2;
+        intArray[2] = number3;
+        intArray[3] = number4;
+
+        System.out.println("Result: " + Arrays.toString(intArray));
+
+    }
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
@@ -18,14 +31,8 @@ public class Task22 {
         int number3 = console.nextInt();
         int number4 = console.nextInt();
 
-        int[] intArray = new int[number];
+        arrayMethod(number, number1, number2, number3, number4);
 
-        intArray[0] = number1;
-        intArray[1] = number2;
-        intArray[2] = number3;
-        intArray[3] = number4;
-
-        System.out.println("Result: " + Arrays.toString(intArray));
     }
 }
 

@@ -1,14 +1,19 @@
 package Laba4;
 
 public class Task2 {
-    public static void main(String[] args) {
-        int n;
-        for (n = 1; n <= 100; n++) {
-            if (n % 3 == 0) {System.out.println("Делится на 3: " + n);}
-            if (n % 5 == 0 && n % 3 == 0) {System.out.println("Делится на 3 и на 5: " + n);}
-            if (n % 5 == 0) {System.out.println("Делится на 5: " + n);}
+    public static void intMethod (int x, int y) {
+
+        for (int n = 1; n <= 100; n++) {
+            if (n % x == 0) {System.out.println("Делится на " + x + ": " + n);}
+            if (n % y == 0 && n % x == 0) {System.out.println("Делится на " + x + " и на " + y + ": " + n);}
+            if (n % y == 0) {System.out.println("Делится на " + y + ": " + n);}
 
         }
+    }
+    public static void main(String[] args) {
+        int x = 3;
+        int y = 5;
+        intMethod(x, y);
     }
 }
 
