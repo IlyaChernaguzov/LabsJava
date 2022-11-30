@@ -4,9 +4,9 @@ public class Task2 {
     public static void main(String[] args) {
         int n;
         for (n = 1; n <= 100; n++) {
-            if (n % 3 == 0 && n % 5 != 0) {System.out.println("Делится на 3: " + n);}
+            if (n % 3 == 0) {System.out.println("Делится на 3: " + n);}
             if (n % 5 == 0 && n % 3 == 0) {System.out.println("Делится на 3 и на 5: " + n);}
-            if (n % 5 == 0 && n % 3 != 0) {System.out.println("Делится на 5: " + n);}
+            if (n % 5 == 0) {System.out.println("Делится на 5: " + n);}
 
         }
     }
