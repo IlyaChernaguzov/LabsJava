@@ -1,8 +1,8 @@
-package Laba6;
+package Laba6.Task1;
 
 public class BankEmployee extends Human{
 
-    protected static String bank;
+    protected String bank;
 
     public BankEmployee(String name, String surname, String bank) {
 
@@ -11,7 +11,7 @@ public class BankEmployee extends Human{
 
     }
 
-    public static String getBank() {
+    public String getBank() {
 
         return bank;
     }
@@ -19,9 +19,9 @@ public class BankEmployee extends Human{
     @Override
     void getFullInfo() {
 
-        System.out.println(BankEmployee.getName());
-        System.out.println(BankEmployee.getSurname());
-        System.out.println(BankEmployee.getBank());
+        System.out.println(this.getName());
+        System.out.println(this.getSurname());
+        System.out.println(this.getBank());
 
     }
 }

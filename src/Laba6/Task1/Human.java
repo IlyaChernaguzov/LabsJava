@@ -1,9 +1,9 @@
-package Laba6;
+package Laba6.Task1;
 
 public abstract class Human {
 
-    protected static String name;
-    protected static String surname;
+    String name;
+    String surname;
 
     public Human(String name, String surname) {
 
@@ -14,12 +14,12 @@ public abstract class Human {
 
     abstract void getFullInfo();
 
-    public static String getName() {
+    public String getName() {
 
         return name;
     }
 
-    public static String getSurname() {
+    public String getSurname() {
 
         return surname;
     }

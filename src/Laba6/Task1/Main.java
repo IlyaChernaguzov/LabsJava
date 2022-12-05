@@ -1,4 +1,4 @@
-package Laba6;
+package Laba6.Task1;
 
 public class Main {
 

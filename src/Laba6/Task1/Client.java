@@ -1,8 +1,8 @@
-package Laba6;
+package Laba6.Task1;
 
 public class Client extends Human{
 
-    public static String bank;
+    public String bank;
 
     public Client(String name, String surname, String bank) {
 
@@ -11,7 +11,7 @@ public class Client extends Human{
 
     }
 
-    public static String getBank() {
+    public String getBank() {
 
         return bank;
     }
@@ -20,9 +20,9 @@ public class Client extends Human{
     @Override
     void getFullInfo() {
 
-        System.out.println(Client.getName());
-        System.out.println(Client.getSurname());
-        System.out.println(Client.getBank());
+        System.out.println(this.getName());
+        System.out.println(this.getSurname());
+        System.out.println(this.getBank());
 
     }
 }
