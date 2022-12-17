@@ -1,0 +1,4 @@
+A Java Developer is a programmer who designs, develops,
+and manages Java-based applications and software.
+With most large organizations using Java to implement software systems and backend services,
+a Java developer is one of the most sought-after jobs today.
