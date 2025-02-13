@@ -1,6 +1,6 @@
 package Laba6.Task5;
 
-public class Child extends Parent{
+public class Child extends Parent {
 
     public String name;
 

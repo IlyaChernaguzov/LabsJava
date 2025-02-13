@@ -1,6 +1,6 @@
 package Laba6.Task1;
 
-public class Client extends Human{
+public class Client extends Human {
 
     public String bank;
 

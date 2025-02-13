@@ -2,8 +2,8 @@ package Laba6.Task1;
 
 public abstract class Human {
 
-    String name;
-    String surname;
+    private String name;
+    private String surname;
 
     public Human(String name, String surname) {
 
