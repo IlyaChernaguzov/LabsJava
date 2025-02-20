@@ -24,7 +24,7 @@ public class FoxedThreadPoolCallableDemo {
         System.out.println("Get result");
         futures.forEach(integerFuture -> {
             try {
-                System.out.println(integerFuture.get());
+                System.out.println(integerFuture.get());//TODO:log
             } catch (InterruptedException | ExecutionException e) {
                 throw  new RuntimeException();
             }
