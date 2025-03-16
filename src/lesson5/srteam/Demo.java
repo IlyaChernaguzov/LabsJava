@@ -7,21 +7,25 @@ public class Demo {
     public static void main(String[] args) {
         final List<String> list = List.of("one", "two", "three");
 
+
+
+        list.parallelStream()
+                .filter(s -> {
+                    System.out.println("filter: " + s);
+                    return s.length() <= 3;
+                })
+                .sorted()
+                .map(s1 -> {
+                    System.out.println("map: " + s1);
+                    return s1.toUpperCase();
+                })
+                .forEach(x -> {
+                    System.out.println("forEach: " + x);
+                });
+
         lazy(list);
 
-//        list.stream()
-//                .filter(s -> {
-//                    System.out.println("filter: " + s);
-//                    return s.length() <= 3;
-//                })
-//                .sorted()
-//                .map(s1 -> {
-//                    System.out.println("map: " + s1);
-//                    return s1.toUpperCase();
-//                })
-//                .forEach(x -> {
-//                    System.out.println("forEach: " + x);
-//                });
+
 
 
 
